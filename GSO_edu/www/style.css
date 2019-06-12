@@ -1,0 +1,19 @@
+* { font-family: Arial; }
+
+#index {background-color: #e9e4e6;
+        color: #c40b13;
+        border: 10px solid green;
+        height: 50px;
+}
+
+#index_1 {
+  background-color: #f69314;
+  color: #000000;
+  border: 10px solid green;
+  height: 50px;
+}
+
+.main-header .navbar-custom-menu, .main-header .navbar-right {
+    float: right;
+    background-color: #ff9a00;
+}
