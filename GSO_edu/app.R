@@ -24,7 +24,7 @@ gddh_cd <- read_excel("data.xlsx", sheet = "gddh_cd")
 
 # map data Vietnam --------------------------------------------------------
 
-vn<-getData(name="GADM",country="Vietnam",level=1)
+vn<-readRDS("gadm36_VNM_1_sp.rds")
 vn <- vn[order(vn$VARNAME_1),]
 
 #iOrder data
