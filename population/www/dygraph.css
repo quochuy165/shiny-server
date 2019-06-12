@@ -1,0 +1,8 @@
+* { font-family: Time New Roman; }
+
+.dygraph-title {
+ color: #0A27F9;
+  font-weight: bold;}
+.dygraph-axis-label {
+  font-size: 16px;
+}
