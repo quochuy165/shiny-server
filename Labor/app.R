@@ -1,29 +1,16 @@
-library(rmarkdown)
 library(ggplot2)
-library(flexdashboard)
 library(tidyverse)
 library(readxl)
 library(highcharter)
-library(datasets)
 library(shiny)
 library(shinydashboard)
-library(mapview)
-library(quantmod)
-library(viridisLite)
 library(raster)
-library(rgdal)
 library(leaflet)
-library(rsconnect)
 library(DT)
-library(knitr)
-library(tmap)
-library(gganimate)
 library(shinyWidgets)
 library(shinythemes)
+library(viridisLite)
 library(dashboardthemes)
-library(glue)
-library(grid)
-library(markdown)
 library(ggExtra)
 library(colourpicker)
 library(memoise)
@@ -69,7 +56,7 @@ laodong_diaphuong <- laodong_diaphuong[order(laodong_diaphuong$Province),]
 tyle_ld_diaphuong <- tyle_ld_diaphuong[order(tyle_ld_diaphuong$Province),]
 
 # data VietNam -----------------
-vn<-getData(name="GADM",country="Vietnam",level=1) # Lấy dữ liệu địa lý
+vn<-readRDS("gadm36_VNM_1_sp.rds") # Lấy dữ liệu địa lý
 vn1<-vn[order(vn$VARNAME_1),]
 
 data <- laodong_diaphuong %>% gather(`2005`,`2007`,`2008`,`2009`,`2010`,
