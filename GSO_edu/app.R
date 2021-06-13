@@ -111,6 +111,7 @@ header <- dashboardHeaderPlus(title = tagList(
 
 
 # UI sidebar --------------------------------------------------------------
+##write UI
 
 sidebar <- dashboardSidebar(
   sidebarMenu(id = "menu",
